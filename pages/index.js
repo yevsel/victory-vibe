@@ -4,6 +4,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import Modal from '@/components/Modal'
+import image1 from "../images/image1.jpg"
+import image2 from "../images/image2.jpg"
+import image3 from "../images/image3.jpg"
+import image4 from "../images/image4.jpg"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -80,12 +84,12 @@ export default function Home() {
                 >Read More</button>
               </div>
               <div>
-                <img src="https://images.unsplash.com/photo-1603792582751-c73976204e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnRtYW4lMjBzbWlsaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"/>
+                <Image src={image1}/>
               </div>
             </div>
             <div className='each-slate space-x-10'>
               <div>
-                <img src="https://images.unsplash.com/photo-1500027202745-eec1ad6523cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"/>
+                <Image src={image2}/>
               </div>
               <div>
                 <h2>Eating Smart: Unlocking Your Full Potential with Sports Nutrition</h2>
@@ -107,16 +111,16 @@ export default function Home() {
                   }}>Read More</button>
               </div>
               <div>
-                <img src="https://images.unsplash.com/photo-1545346315-f4c47e3e1b55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/>
+                <Image src={image3}/>
               </div>
             </div>
             <div className='each-slate space-x-10'>
               <div>
-                <img src="https://images.unsplash.com/photo-1583500178964-98351600826a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/>
+                <Image src={image4}/>
               </div>
               <div>
                 <h2>Motivation for the Gym: Finding Your Drive to Stay Active</h2>
-                <p className='my-10'>Finding the motivation to hit the gym regularly can sometimes be a challenge. However, staying active and maintaining a fitness routine is essential for a healthy and balanced lifestyle. In this blog, we'll explore effective strategies to boost your motivation, helping you stay committed to your gym workouts and make fitness a lifelong habit.</p>
+                <p className='my-10'>Finding the motivation to hit the gym regularly can sometimes be a challenge. However, staying active and maintaining a fitness routine is essential for a healthy and balanced lifestyle. In this blog, we will explore effective strategies to boost your motivation, helping you stay committed to your gym workouts and make fitness a lifelong habit.</p>
                 <button onClick={()=>{
                     setShowModal(true)
                     setModalData(blogs[3])

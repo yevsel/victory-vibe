@@ -9,7 +9,7 @@ function Modal({setShowModal,modalData}) {
                 <h2>{modalData.title}</h2>
                 <h3>{modalData.intro}</h3>
                 <div className='mt-10 space-y-3'>
-                    {modalData.body.map(item=><p>{item}</p>)}
+                    {modalData.body.map(item=><p key={item.id}>{item}</p>)}
                 </div>
             </div>
         </div>
